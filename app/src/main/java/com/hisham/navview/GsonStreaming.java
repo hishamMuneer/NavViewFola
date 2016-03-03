@@ -46,8 +46,8 @@ public class GsonStreaming {
                     reader.beginArray();
                     while (reader.hasNext()){
                         Auction auction = new Gson().fromJson(reader, Auction.class);
-                        System.out.println(auction.getItem() + " -- " + auction.getQuantity() + " -- " +auction.getOwner()+ " -- " +auction.getOwnerRealm());
-                        listener.onDataReceived(auction.getItem() + " -- " + auction.getQuantity() + " -- " +auction.getOwner()+ " -- " +auction.getOwnerRealm());
+                        System.out.println(auction.getItem() + " -- " + auction.getQuantity() + " -- " +auction.getOwner()+ " -- " +auction.getOwnerRealm() + " - " + auction.getTimeLeft());
+                        listener.onDataReceived(auction.getItem() + " -- " + auction.getQuantity() + " -- " +auction.getOwner()+ " -- " +auction.getOwnerRealm()+ " - " + auction.getTimeLeft());
                         Thread.sleep(100);
                     }
                 } else {// unexpected value, skip it or generate error

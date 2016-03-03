@@ -9,6 +9,15 @@ public class Auction {
     String owner;
     String ownerRealm;
     int quantity;
+    String timeLeft;
+
+    public String getTimeLeft() {
+        return timeLeft;
+    }
+
+    public void setTimeLeft(String timeLeft) {
+        this.timeLeft = timeLeft;
+    }
 
     public int getItem() {
         return item;
