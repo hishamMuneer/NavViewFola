@@ -17,7 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, MainFragment.OnFragmentInteractionListener{
+        implements NavigationView.OnNavigationItemSelectedListener, MainFragment.OnFragmentInteractionListener {
 
 
     private DrawerLayout drawer;
